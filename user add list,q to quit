@@ -1,0 +1,25 @@
+# Initialize an empty list
+number_list = []
+
+while True:
+    try:
+        # Prompt the user for a number as a string
+        user_input = input("Enter a number (or 'q' to quit): ")
+
+        # Check if the user wants to quit
+        if user_input.lower() == 'q':
+            break
+
+        # Convert the user input to a float
+        number = float(user_input)
+
+        # Check if the number is greater than 100
+        if number > 100:
+            number_list.append("EXCESS")
+        else:
+            number_list.append(number)
+    except ValueError:
+        print("Invalid input. Please enter a valid number or 'q' to quit.")
+
+# Print the list
+print("List of numbers:", number_list)
