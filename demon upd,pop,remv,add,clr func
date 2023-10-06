@@ -1,0 +1,23 @@
+my_set = {1, 2, 3, 4, 5}
+
+
+new_elements = {6, 7, 8}
+my_set.update(new_elements)
+print("After update():", my_set)
+
+
+popped_element = my_set.pop()
+print("Popped element:", popped_element)
+print("After pop():", my_set)
+
+
+my_set.remove(3)
+print("After remove(3):", my_set)
+
+
+my_set.add(9)
+print("After add(9):", my_set)
+
+
+my_set.clear()
+print("After clear():", my_set)
