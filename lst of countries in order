@@ -1,0 +1,11 @@
+countries_list = ["USA", "Canada", "India", "Canada", "Australia", "India", "UK"]
+
+
+countries_set = set(countries_list)
+
+
+for country in countries_list:
+    if country in countries_set:
+        print(country)
+        
+        countries_set.remove(country)
