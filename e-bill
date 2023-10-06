@@ -1,0 +1,19 @@
+units_consumed = int(input("Enter the number of units consumed: "))
+
+
+rate = 0
+total_bill = 0
+
+
+if units_consumed <= 150:
+    rate = 3
+    total_bill = units_consumed * rate
+elif units_consumed <= 350:
+    rate = 4
+    total_bill = 150 * 3 + (units_consumed - 150) * rate
+else:
+    rate = 4
+    total_bill = 150 * 3 + 200 * 4 + (units_consumed - 350) * rate
+
+
+print(f"Electricity Bill: Rs. {total_bill}")
