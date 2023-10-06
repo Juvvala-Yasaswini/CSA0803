@@ -1,0 +1,29 @@
+def display_questions(questions_file):
+    with open(questions_file, "r") as file:
+        for line in file:
+            print(line, end='')
+
+
+def display_answers(answers_file):
+    with open(answers_file, "r") as file:
+        for line in file:
+            print(line, end='')
+
+
+if _name_ == "_main_":
+    import os
+    print("Current Directory:", os.getcwd())  
+    
+    questions_file = "Questions.txt"
+    answers_file = "Answers.txt"
+
+    print("Welcome to the Quiz!")
+    input("Press Enter to start...")
+    
+    print("\n--- Quiz Questions ---")
+    display_questions(questions_file)
+
+    input("\nPress Enter to see the answers...")
+    
+    print("\n--- Quiz Answers ---")
+    display_answers(answers_file)
