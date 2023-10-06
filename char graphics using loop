@@ -1,0 +1,4 @@
+word = "graphics"
+
+for char in word:
+    print(char)
