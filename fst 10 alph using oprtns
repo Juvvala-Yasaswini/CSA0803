@@ -1,0 +1,13 @@
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+
+print("First three letters:", alphabet[:3])
+
+
+middle_start = len(alphabet) // 2 - 1  
+middle_end = middle_start + 3  
+print("Middle three letters:", alphabet[middle_start:middle_end])
+
+
+start_index = 4  
+print("From index", start_index, "to the end:", alphabet[start_index:])
