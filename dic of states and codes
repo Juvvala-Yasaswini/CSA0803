@@ -1,0 +1,21 @@
+state_codes = {
+    "New York": "NY",
+    "California": "CA",
+    "Texas": "TX",
+    "Florida": "FL",
+}
+
+
+state_codes["Illinois"] = "IL"
+
+
+print("States and their codes:")
+for state, code in state_codes.items():
+    print(f"{state}: {code}")
+
+
+state_to_lookup = "Ohio"
+default_code = "N/A"
+
+code = state_codes.get(state_to_lookup, default_code)
+print(f"The code for {state_to_lookup} is: {code}")
